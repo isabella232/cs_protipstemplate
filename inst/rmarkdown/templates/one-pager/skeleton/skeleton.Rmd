@@ -1,8 +1,20 @@
 ---
 title: "Template Title"
-author: "Your Name"
-date: "The Date"
-output: output_format
+output:
+  html_document: 
+    css: "style.css"
+    includes:
+      before_body: header.html
+      after_body: footer.html
+  pdf_document: 
+    latex_engine: xelatex
+mainfont: Source Sans Pro
+header-includes:
+- \usepackage{titling}
+- \pretitle{\begin{center}\LARGE\includegraphics{"pro tips header.jpg"}\\[\bigskipamount]}
+- \posttitle{\end{center}}
+classoption:
+- twocolumn
 ---
 
 ```{r setup, include=FALSE}
