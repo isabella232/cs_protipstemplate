@@ -1,18 +1,17 @@
 ---
-title: "Template Title"
+title: "Title"
 output:
+  pdf_document: 
+    latex_engine: xelatex
+    includes:
+      in_header: template_files/header.tex
   html_document: 
     css: "template_files/style.css"
     includes:
       before_body: template_files/header.html
       after_body: template_files/footer.html
-  pdf_document: 
-    latex_engine: xelatex
 mainfont: Source Sans Pro
-header-includes:
-- \usepackage{titling}
-- \pretitle{\begin{center}\LARGE\includegraphics{"template_files/pro tips header.jpg"}\\[\bigskipamount]}
-- \posttitle{\end{center}}
+geometry: "left=1cm,right=1cm,top=5.3cm,bottom=3cm"
 classoption:
 - twocolumn
 ---
@@ -21,9 +20,9 @@ classoption:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Adding an RMarkdown Template
 
-This file is what a user will see when they select your template. Make sure that you update the fields in the yaml header. In particular you will want to update the `output` field to whatever format your template requires.
+## Adding an RMarkdown Template
+This file is what a user will see when they select your template. Make sure that you update the fields in the yaml header. In particular you will want to update the `output` field to whatever format your template requires. 
 
 This is a good place to demonstrate special features that your template provides. Ideally it should knit out-of-the-box, or at least contain clear instructions as to what needs changing.
 
