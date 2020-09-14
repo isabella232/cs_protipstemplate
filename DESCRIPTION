@@ -1,4 +1,4 @@
-Package: ProTipsTemplate
+Package: cs_protipstemplate
 Type: Package
 Title: R Markdown template for RStudio Customer Success Pro Tips
 Version: 0.1.0
