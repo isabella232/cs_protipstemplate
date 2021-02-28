@@ -14,21 +14,31 @@ output:
 geometry: left=1cm,right=1cm,top=6cm,bottom=2.4cm
 classoption:
 - twocolumn
-mainfont: sourcesanspro
-sansfont: sourcesanspro
-monofont: sourcecodepro
+mainfont: "Source Sans Pro"
+sansfont: "Source Sans Pro"
+monofont: "Source Code Pro"
 header-includes:
 - \usepackage[default]{sourcesanspro}
 ---
+<!-- Don't forget to revise the Version number after making changes to published pro tips! -->
 \fancyfoot[L]{\fontsize{8}{8}\selectfont Version 1.1}
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
 ```
 
-## Adding an RMarkdown Template
-This file is what a user will see when they select your template. Make sure that you update the fields in the yaml header. In particular you will want to update the `output` field to whatever format your template requires. 
+# What's the pain point? 
 
-This is a good place to demonstrate special features that your template provides. Ideally it should knit out-of-the-box, or at least contain clear instructions as to what needs changing.
+# Introduce the solution 
 
-Finally, be sure to remove this message!
+# Requirements
+
+# How to do it
+```{r}
+sample_code <- function(variables) {
+  print(variables)
+}
+```
+
+# What's next / additional resources
+

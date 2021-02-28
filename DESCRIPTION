@@ -1,7 +1,7 @@
 Package: csprotipstemplate
 Type: Package
 Title: R Markdown template for RStudio Customer Success Pro Tips
-Version: 0.1.0
+Version: 0.1.1
 Author: Katie Masiello
 Maintainer: Katie Masiello <katie.masiello@rstudio.com>
 Description: Use the png files in header files to create a new header banner.
